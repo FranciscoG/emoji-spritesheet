@@ -13,6 +13,9 @@
 # don't want to accidentaly store the json files
 lib/*.json
 
+# do not want to upload these images to github
+twitch/**
+
 # Icon must end with two \r
 Icon
 
