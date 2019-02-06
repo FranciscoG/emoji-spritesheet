@@ -2,7 +2,7 @@
 
 ## Emoji
 
-**Important** you must complete the `url` constant/variable in `downloadEmojis.js` to indicate where it should download the emojis from
+**Important** you must complete the [`url`](lib/downloadEmojis.js#L7) constant/variable in `downloadEmojis.js` to indicate where it should download the emojis from
 
 
 First download the emoji images. It will iterate through the `./lib/emojiArray.js` and combine them with the `url` provided to download the emojis
@@ -25,7 +25,9 @@ It creates the following 2 files in the `/output` folder
 
 This depends on these 2 APIs being available
 - https://twitchemotes.com/api_cache/v3/subscriber.json
-- https://twitchemotes.com/api_cache/v3/images.json"
+- https://twitchemotes.com/api_cache/v3/images.json
+
+Also it only downloads from a specific and [limited set of Twitch subscriber channels](/lib/downloadTwitch.js#L13) (and global of course)
 
 First download the emoji images
 ```bash
