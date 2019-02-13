@@ -15,6 +15,7 @@ lib/*.json
 
 # do not want to upload these images to github
 twitch/**
+bttv/**
 
 # Icon must end with two \r
 Icon
