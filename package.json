@@ -4,7 +4,8 @@
   "description": "",
   "main": "emoji.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "download": "node lib/downloadBTTV.js && node lib/downloadEmojis.js && node lib/downloadTwitch.js",
+    "sprite" : "node lib/makeBTTVSprite.js && node lib/makeEmojiSprite.js && node lib/makeTwitchSprite.js"
   },
   "keywords": [],
   "author": "",
